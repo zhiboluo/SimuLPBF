@@ -1,0 +1,742 @@
+# Listing of Parameters
+# ---------------------
+
+
+subsection Heat source
+  # scanning speed
+  set v = 960e-3
+  # radius of laser spot
+  set w = 0.055e-3 #0.075e-3
+  # laser power
+  set P = 280   #250 #130 #190
+  # emissivity coefficient of laser
+  set Emsvity = 0.6
+  # length of scanning track
+  set line_length = 10e-3
+ 
+end
+
+subsection Material property
+	set density = 8146
+	set melt_point = 1700   #1370C~1430C
+end
+
+subsection Temperature dependent solid material conductivity
+	set num = 6
+	
+	set T_solid_conduct_1 = 293
+	set T_solid_conduct_2 = 373		
+	set T_solid_conduct_3 = 573
+	set T_solid_conduct_4 = 773
+ 	set T_solid_conduct_5 = 973
+ 	set T_solid_conduct_6 = 1623
+
+	set K_solid_1 = 11.4
+	set K_solid_2 = 12.5	
+	set K_solid_3 = 14.0
+	set K_solid_4 = 15.5
+ 	set K_solid_5 = 21.5
+ 	set K_solid_6 = 31.3
+ 	
+end
+
+subsection Temperature dependent liquid material conductivity
+	set num = 6
+	
+	set T_liquid_conduct_1 = 293
+	set T_liquid_conduct_2 = 373		
+	set T_liquid_conduct_3 = 573
+	set T_liquid_conduct_4 = 773
+ 	set T_liquid_conduct_5 = 973
+ 	set T_liquid_conduct_6 = 1623
+
+	set K_liquid_1 = 11.4
+	set K_liquid_2 = 12.5	
+	set K_liquid_3 = 14.0
+	set K_liquid_4 = 15.5
+ 	set K_liquid_5 = 21.5
+ 	set K_liquid_6 = 31.3
+end
+
+subsection Temperature dependent powder material conductivity
+	set num = 7
+	
+	set T_powder_conduct_1 = 293
+	set T_powder_conduct_2 = 373		
+	set T_powder_conduct_3 = 573
+	set T_powder_conduct_4 = 773
+ 	set T_powder_conduct_5 = 973
+ 	set T_powder_conduct_6 = 1623
+ 	set T_powder_conduct_7 = 1700
+
+	set K_powder_1 = 1.14
+	set K_powder_2 = 1.25	
+	set K_powder_3 = 1.40
+	set K_powder_4 = 1.55
+ 	set K_powder_5 = 2.15
+ 	set K_powder_6 = 3.13
+ 	set K_powder_7 = 31.3
+
+end
+
+
+subsection Temperature dependent solid material convectivity
+	set num = 5
+	
+	set T_solid_convect_1 = 300
+	set T_solid_convect_2 = 350		
+	set T_solid_convect_3 = 400
+	set T_solid_convect_4 = 450
+ 	set T_solid_convect_5 = 500
+
+	set H_solid_1 = 25
+	set H_solid_2 = 25		
+	set H_solid_3 = 25
+	set H_solid_4 = 25
+ 	set H_solid_5 = 25
+end
+
+subsection Temperature dependent liquid material convectivity
+	set num = 1
+	
+	set T_liquid_convect_1 = 300
+	
+	set H_liquid_1 = 25
+end
+
+subsection Temperature dependent powder material convectivity
+	set num = 5
+	
+	set T_powder_convect_1 = 300
+	set T_powder_convect_2 = 350		
+	set T_powder_convect_3 = 400
+	set T_powder_convect_4 = 450
+ 	set T_powder_convect_5 = 500
+
+	set H_powder_1 = 25
+	set H_powder_2 = 25		
+	set H_powder_3 = 25
+	set H_powder_4 = 25
+ 	set H_powder_5 = 25
+end
+
+subsection Temperature dependent solid material specific heat
+	set num = 6
+
+	set T_solid_specific_heat_1 = 293
+	set T_solid_specific_heat_2 = 373		
+	set T_solid_specific_heat_3 = 573
+	set T_solid_specific_heat_4 = 773
+ 	set T_solid_specific_heat_5 = 973
+ 	set T_solid_specific_heat_6 = 1623
+
+	set Cp_solid_1 = 427
+	set Cp_solid_2 = 441		
+	set Cp_solid_3 = 481
+	set Cp_solid_4 = 521
+ 	set Cp_solid_5 = 601
+ 	set Cp_solid_6 = 691
+
+end
+
+subsection Temperature dependent liquid material specific heat
+	set num = 6
+
+    set T_liquid_specific_heat_1 = 293
+	set T_liquid_specific_heat_2 = 373		
+	set T_liquid_specific_heat_3 = 573
+	set T_liquid_specific_heat_4 = 773
+ 	set T_liquid_specific_heat_5 = 973
+ 	set T_liquid_specific_heat_6 = 1623
+
+	set Cp_liquid_1 = 427
+	set Cp_liquid_2 = 441		
+	set Cp_liquid_3 = 481
+	set Cp_liquid_4 = 521
+ 	set Cp_liquid_5 = 601
+ 	set Cp_liquid_6 = 691
+end
+
+subsection Temperature dependent powder material specific heat
+	set num = 7
+
+	set T_powder_specific_heat_1 = 293
+	set T_powder_specific_heat_2 = 373		
+	set T_powder_specific_heat_3 = 573
+	set T_powder_specific_heat_4 = 773
+ 	set T_powder_specific_heat_5 = 973
+ 	set T_powder_specific_heat_6 = 1623
+ 	set T_powder_specific_heat_7 = 1700
+
+	set Cp_powder_1 = 227
+	set Cp_powder_2 = 241		
+	set Cp_powder_3 = 281
+	set Cp_powder_4 = 321
+ 	set Cp_powder_5 = 401
+ 	set Cp_powder_6 = 491
+ 	set Cp_powder_7 = 691
+end
+
+subsection Temperature dependent solid material emissivity
+	set num = 3
+	
+	set T_solid_emissive_1 = 811
+ 	set T_solid_emissive_2 = 922
+ 	set T_solid_emissive_3 = 1033
+
+	set E_solid_1 = 0.28
+ 	set E_solid_2 = 0.42
+ 	set E_solid_3 = 0.58
+end
+
+subsection Temperature dependent liquid material emissivity
+	set num = 3
+	
+	set T_liquid_emissive_1 = 811
+ 	set T_liquid_emissive_2 = 922
+ 	set T_liquid_emissive_3 = 1033
+
+	set E_liquid_1 = 0.28
+ 	set E_liquid_2 = 0.42
+ 	set E_liquid_3 = 0.58
+end
+
+subsection Temperature dependent powder material emissivity
+	set num = 3
+	
+	set T_powder_emissive_1 = 811
+ 	set T_powder_emissive_2 = 922
+ 	set T_powder_emissive_3 = 1033
+
+	set E_powder_1 = 0.28
+ 	set E_powder_2 = 0.42
+ 	set E_powder_3 = 0.58
+end
+
+
+# --------------------- mechanical properties start----------
+
+# elastic_modulus
+subsection Temperature dependent solid material elastic_modulus
+	set num = 16
+	
+	set T_solid_elastic_modulus_1 = 293
+ 	set T_solid_elastic_modulus_2 = 373
+ 	set T_solid_elastic_modulus_3 = 473
+ 	set T_solid_elastic_modulus_4 = 573
+ 	set T_solid_elastic_modulus_5 = 673
+ 	set T_solid_elastic_modulus_6 = 773
+ 	set T_solid_elastic_modulus_7 = 873
+ 	set T_solid_elastic_modulus_8 = 973
+ 	set T_solid_elastic_modulus_9 = 1073
+ 	set T_solid_elastic_modulus_10 = 1173
+ 	set T_solid_elastic_modulus_11 = 1273
+ 	set T_solid_elastic_modulus_12 = 1373
+ 	set T_solid_elastic_modulus_13 = 1473
+ 	set T_solid_elastic_modulus_14 = 1573
+ 	set T_solid_elastic_modulus_15 = 1673
+ 	set T_solid_elastic_modulus_16 = 1723
+
+	set E_solid_elastic_modulus_1 = 206e9
+ 	set E_solid_elastic_modulus_2 = 203e9
+ 	set E_solid_elastic_modulus_3 = 201e9
+ 	set E_solid_elastic_modulus_4 = 200e9
+ 	set E_solid_elastic_modulus_5 = 165e9
+ 	set E_solid_elastic_modulus_6 = 100e9
+ 	set E_solid_elastic_modulus_7 = 60e9
+ 	set E_solid_elastic_modulus_8 = 40e9
+ 	set E_solid_elastic_modulus_9 = 30e9
+ 	set E_solid_elastic_modulus_10 = 20e9
+ 	set E_solid_elastic_modulus_11 = 10e9
+ 	set E_solid_elastic_modulus_12 = 7e9
+ 	set E_solid_elastic_modulus_13 = 4e9
+ 	set E_solid_elastic_modulus_14 = 1e9
+ 	set E_solid_elastic_modulus_15 = 1e8
+ 	set E_solid_elastic_modulus_16 = 1e8
+
+end
+
+subsection Temperature dependent liquid material elastic_modulus
+	set num = 16
+	
+	set T_liquid_elastic_modulus_1 = 293
+ 	set T_liquid_elastic_modulus_2 = 373
+ 	set T_liquid_elastic_modulus_3 = 473
+ 	set T_liquid_elastic_modulus_4 = 573
+ 	set T_liquid_elastic_modulus_5 = 673
+ 	set T_liquid_elastic_modulus_6 = 773
+ 	set T_liquid_elastic_modulus_7 = 873
+ 	set T_liquid_elastic_modulus_8 = 973
+ 	set T_liquid_elastic_modulus_9 = 1073
+ 	set T_liquid_elastic_modulus_10 = 1173
+ 	set T_liquid_elastic_modulus_11 = 1273
+ 	set T_liquid_elastic_modulus_12 = 1373
+ 	set T_liquid_elastic_modulus_13 = 1473
+ 	set T_liquid_elastic_modulus_14 = 1573
+ 	set T_liquid_elastic_modulus_15 = 1673
+ 	set T_liquid_elastic_modulus_16 = 1723
+
+	set E_liquid_elastic_modulus_1 = 206e9
+ 	set E_liquid_elastic_modulus_2 = 203e9
+ 	set E_liquid_elastic_modulus_3 = 201e9
+ 	set E_liquid_elastic_modulus_4 = 200e9
+ 	set E_liquid_elastic_modulus_5 = 165e9
+ 	set E_liquid_elastic_modulus_6 = 100e9
+ 	set E_liquid_elastic_modulus_7 = 60e9
+ 	set E_liquid_elastic_modulus_8 = 40e9
+ 	set E_liquid_elastic_modulus_9 = 30e9
+ 	set E_liquid_elastic_modulus_10 = 20e9
+ 	set E_liquid_elastic_modulus_11 = 10e9
+ 	set E_liquid_elastic_modulus_12 = 7e9
+ 	set E_liquid_elastic_modulus_13 = 4e9
+ 	set E_liquid_elastic_modulus_14 = 1e9
+ 	set E_liquid_elastic_modulus_15 = 1e8
+ 	set E_liquid_elastic_modulus_16 = 1e8
+ 
+end
+
+subsection Temperature dependent powder material elastic_modulus
+	set num = 16
+	
+	set T_powder_elastic_modulus_1 = 293
+ 	set T_powder_elastic_modulus_2 = 373
+ 	set T_powder_elastic_modulus_3 = 473
+ 	set T_powder_elastic_modulus_4 = 573
+ 	set T_powder_elastic_modulus_5 = 673
+ 	set T_powder_elastic_modulus_6 = 773
+ 	set T_powder_elastic_modulus_7 = 873
+ 	set T_powder_elastic_modulus_8 = 973
+ 	set T_powder_elastic_modulus_9 = 1073
+ 	set T_powder_elastic_modulus_10 = 1173
+ 	set T_powder_elastic_modulus_11 = 1273
+ 	set T_powder_elastic_modulus_12 = 1373
+ 	set T_powder_elastic_modulus_13 = 1473
+ 	set T_powder_elastic_modulus_14 = 1573
+ 	set T_powder_elastic_modulus_15 = 1673
+ 	set T_powder_elastic_modulus_16 = 1723
+
+	set E_powder_elastic_modulus_1 = 206e9
+ 	set E_powder_elastic_modulus_2 = 203e9
+ 	set E_powder_elastic_modulus_3 = 201e9
+ 	set E_powder_elastic_modulus_4 = 200e9
+ 	set E_powder_elastic_modulus_5 = 165e9
+ 	set E_powder_elastic_modulus_6 = 100e9
+ 	set E_powder_elastic_modulus_7 = 60e9
+ 	set E_powder_elastic_modulus_8 = 40e9
+ 	set E_powder_elastic_modulus_9 = 30e9
+ 	set E_powder_elastic_modulus_10 = 20e9
+ 	set E_powder_elastic_modulus_11 = 10e9
+ 	set E_powder_elastic_modulus_12 = 7e9
+ 	set E_powder_elastic_modulus_13 = 4e9
+ 	set E_powder_elastic_modulus_14 = 1e9
+ 	set E_powder_elastic_modulus_15 = 1e8
+ 	set E_powder_elastic_modulus_16 = 1e8
+end
+
+
+# poisson_ratio
+subsection Temperature dependent solid material poisson_ratio
+	set num = 13
+	
+	set T_solid_poisson_ratio_1 = 293
+ 	set T_solid_poisson_ratio_2 = 373
+ 	set T_solid_poisson_ratio_3 = 473
+ 	set T_solid_poisson_ratio_4 = 573
+ 	set T_solid_poisson_ratio_5 = 673
+ 	set T_solid_poisson_ratio_6 = 773
+ 	set T_solid_poisson_ratio_7 = 873
+ 	set T_solid_poisson_ratio_8 = 973
+ 	set T_solid_poisson_ratio_9 = 1073
+ 	set T_solid_poisson_ratio_10 = 1173
+ 	set T_solid_poisson_ratio_11 = 1273
+ 	set T_solid_poisson_ratio_12 = 1773
+ 	set T_solid_poisson_ratio_13 = 3273
+
+	set v_solid_poisson_ratio_1 = 0.296
+ 	set v_solid_poisson_ratio_2 = 0.311
+ 	set v_solid_poisson_ratio_3 = 0.33
+ 	set v_solid_poisson_ratio_4 = 0.349
+ 	set v_solid_poisson_ratio_5 = 0.367
+ 	set v_solid_poisson_ratio_6 = 0.386
+ 	set v_solid_poisson_ratio_7 = 0.405
+ 	set v_solid_poisson_ratio_8 = 0.423
+ 	set v_solid_poisson_ratio_9 = 0.442
+ 	set v_solid_poisson_ratio_10 = 0.461
+ 	set v_solid_poisson_ratio_11 = 0.475
+ 	set v_solid_poisson_ratio_12 = 0.48
+ 	set v_solid_poisson_ratio_13 = 0.48
+ 	
+end
+
+subsection Temperature dependent liquid material poisson_ratio
+	set num = 13
+	
+	set T_liquid_poisson_ratio_1 = 293
+ 	set T_liquid_poisson_ratio_2 = 373
+ 	set T_liquid_poisson_ratio_3 = 473
+ 	set T_liquid_poisson_ratio_4 = 573
+ 	set T_liquid_poisson_ratio_5 = 673
+ 	set T_liquid_poisson_ratio_6 = 773
+ 	set T_liquid_poisson_ratio_7 = 873
+ 	set T_liquid_poisson_ratio_8 = 973
+ 	set T_liquid_poisson_ratio_9 = 1073
+ 	set T_liquid_poisson_ratio_10 = 1173
+ 	set T_liquid_poisson_ratio_11 = 1273
+ 	set T_liquid_poisson_ratio_12 = 1773
+ 	set T_liquid_poisson_ratio_13 = 3273
+
+	set v_liquid_poisson_ratio_1 = 0.296
+ 	set v_liquid_poisson_ratio_2 = 0.311
+ 	set v_liquid_poisson_ratio_3 = 0.33
+ 	set v_liquid_poisson_ratio_4 = 0.349
+ 	set v_liquid_poisson_ratio_5 = 0.367
+ 	set v_liquid_poisson_ratio_6 = 0.386
+ 	set v_liquid_poisson_ratio_7 = 0.405
+ 	set v_liquid_poisson_ratio_8 = 0.423
+ 	set v_liquid_poisson_ratio_9 = 0.442
+ 	set v_liquid_poisson_ratio_10 = 0.461
+ 	set v_liquid_poisson_ratio_11 = 0.475
+ 	set v_liquid_poisson_ratio_12 = 0.48
+ 	set v_liquid_poisson_ratio_13 = 0.48
+ 
+end
+
+subsection Temperature dependent powder material poisson_ratio
+	set num = 13
+	
+	set T_powder_poisson_ratio_1 = 293
+ 	set T_powder_poisson_ratio_2 = 373
+ 	set T_powder_poisson_ratio_3 = 473
+ 	set T_powder_poisson_ratio_4 = 573
+ 	set T_powder_poisson_ratio_5 = 673
+ 	set T_powder_poisson_ratio_6 = 773
+ 	set T_powder_poisson_ratio_7 = 873
+ 	set T_powder_poisson_ratio_8 = 973
+ 	set T_powder_poisson_ratio_9 = 1073
+ 	set T_powder_poisson_ratio_10 = 1173
+ 	set T_powder_poisson_ratio_11 = 1273
+ 	set T_powder_poisson_ratio_12 = 1773
+ 	set T_powder_poisson_ratio_13 = 3273
+
+	set v_powder_poisson_ratio_1 = 0.296
+ 	set v_powder_poisson_ratio_2 = 0.311
+ 	set v_powder_poisson_ratio_3 = 0.33
+ 	set v_powder_poisson_ratio_4 = 0.349
+ 	set v_powder_poisson_ratio_5 = 0.367
+ 	set v_powder_poisson_ratio_6 = 0.386
+ 	set v_powder_poisson_ratio_7 = 0.405
+ 	set v_powder_poisson_ratio_8 = 0.423
+ 	set v_powder_poisson_ratio_9 = 0.442
+ 	set v_powder_poisson_ratio_10 = 0.461
+ 	set v_powder_poisson_ratio_11 = 0.475
+ 	set v_powder_poisson_ratio_12 = 0.48
+ 	set v_powder_poisson_ratio_13 = 0.48
+end
+
+# thermal_expansion
+subsection Temperature dependent solid material thermal_expansion
+	set num = 15
+	
+	set T_solid_thermal_expansion_1 = 293
+ 	set T_solid_thermal_expansion_2 = 373
+ 	set T_solid_thermal_expansion_3 = 473
+ 	set T_solid_thermal_expansion_4 = 573
+ 	set T_solid_thermal_expansion_5 = 673
+ 	set T_solid_thermal_expansion_6 = 773
+ 	set T_solid_thermal_expansion_7 = 873
+ 	set T_solid_thermal_expansion_8 = 973
+ 	set T_solid_thermal_expansion_9 = 1073
+ 	set T_solid_thermal_expansion_10 = 1173
+ 	set T_solid_thermal_expansion_11 = 1273
+ 	set T_solid_thermal_expansion_12 = 1373
+ 	set T_solid_thermal_expansion_13 = 1473
+	set T_solid_thermal_expansion_14 = 1573
+ 	set T_solid_thermal_expansion_15 = 1673
+
+	set a_solid_thermal_expansion_1 = 11.7e-6
+ 	set a_solid_thermal_expansion_2 = 11.7e-6
+ 	set a_solid_thermal_expansion_3 = 12.2e-6
+ 	set a_solid_thermal_expansion_4 = 12.86e-6
+ 	set a_solid_thermal_expansion_5 = 13.3e-6
+ 	set a_solid_thermal_expansion_6 = 13.8e-6
+ 	set a_solid_thermal_expansion_7 = 14.4e-6
+ 	set a_solid_thermal_expansion_8 = 14.8e-6
+ 	set a_solid_thermal_expansion_9 = 14.8e-6
+ 	set a_solid_thermal_expansion_10 = 14.8e-6
+ 	set a_solid_thermal_expansion_11 = 14.8e-6
+ 	set a_solid_thermal_expansion_12 = 14.8e-6
+ 	set a_solid_thermal_expansion_13 = 14.8e-6
+ 	set a_solid_thermal_expansion_14 = 14.8e-6
+ 	set a_solid_thermal_expansion_15 = 14.8e-6
+end
+
+subsection Temperature dependent liquid material thermal_expansion
+	set num = 15
+	
+	set T_liquid_thermal_expansion_1 = 293
+ 	set T_liquid_thermal_expansion_2 = 373
+ 	set T_liquid_thermal_expansion_3 = 473
+ 	set T_liquid_thermal_expansion_4 = 573
+ 	set T_liquid_thermal_expansion_5 = 673
+ 	set T_liquid_thermal_expansion_6 = 773
+ 	set T_liquid_thermal_expansion_7 = 873
+ 	set T_liquid_thermal_expansion_8 = 973
+ 	set T_liquid_thermal_expansion_9 = 1073
+ 	set T_liquid_thermal_expansion_10 = 1173
+ 	set T_liquid_thermal_expansion_11 = 1273
+ 	set T_liquid_thermal_expansion_12 = 1373
+ 	set T_liquid_thermal_expansion_13 = 1473
+	set T_liquid_thermal_expansion_14 = 1573
+ 	set T_liquid_thermal_expansion_15 = 1673
+
+	set a_liquid_thermal_expansion_1 = 11.7e-6
+ 	set a_liquid_thermal_expansion_2 = 11.7e-6
+ 	set a_liquid_thermal_expansion_3 = 12.2e-6
+ 	set a_liquid_thermal_expansion_4 = 12.86e-6
+ 	set a_liquid_thermal_expansion_5 = 13.3e-6
+ 	set a_liquid_thermal_expansion_6 = 13.8e-6
+ 	set a_liquid_thermal_expansion_7 = 14.4e-6
+ 	set a_liquid_thermal_expansion_8 = 14.8e-6
+ 	set a_liquid_thermal_expansion_9 = 14.8e-6
+ 	set a_liquid_thermal_expansion_10 = 14.8e-6
+ 	set a_liquid_thermal_expansion_11 = 14.8e-6
+ 	set a_liquid_thermal_expansion_12 = 14.8e-6
+ 	set a_liquid_thermal_expansion_13 = 14.8e-6
+ 	set a_liquid_thermal_expansion_14 = 14.8e-6
+ 	set a_liquid_thermal_expansion_15 = 14.8e-6
+ 
+end
+
+subsection Temperature dependent powder material thermal_expansion
+	set num = 15
+	
+	set T_powder_thermal_expansion_1 = 293
+ 	set T_powder_thermal_expansion_2 = 373
+ 	set T_powder_thermal_expansion_3 = 473
+ 	set T_powder_thermal_expansion_4 = 573
+ 	set T_powder_thermal_expansion_5 = 673
+ 	set T_powder_thermal_expansion_6 = 773
+ 	set T_powder_thermal_expansion_7 = 873
+ 	set T_powder_thermal_expansion_8 = 973
+ 	set T_powder_thermal_expansion_9 = 1073
+ 	set T_powder_thermal_expansion_10 = 1173
+ 	set T_powder_thermal_expansion_11 = 1273
+ 	set T_powder_thermal_expansion_12 = 1373
+ 	set T_powder_thermal_expansion_13 = 1473
+	set T_powder_thermal_expansion_14 = 1573
+ 	set T_powder_thermal_expansion_15 = 1673
+
+	set a_powder_thermal_expansion_1 = 11.7e-6
+ 	set a_powder_thermal_expansion_2 = 11.7e-6
+ 	set a_powder_thermal_expansion_3 = 12.2e-6
+ 	set a_powder_thermal_expansion_4 = 12.86e-6
+ 	set a_powder_thermal_expansion_5 = 13.3e-6
+ 	set a_powder_thermal_expansion_6 = 13.8e-6
+ 	set a_powder_thermal_expansion_7 = 14.4e-6
+ 	set a_powder_thermal_expansion_8 = 14.8e-6
+ 	set a_powder_thermal_expansion_9 = 14.8e-6
+ 	set a_powder_thermal_expansion_10 = 14.8e-6
+ 	set a_powder_thermal_expansion_11 = 14.8e-6
+ 	set a_powder_thermal_expansion_12 = 14.8e-6
+ 	set a_powder_thermal_expansion_13 = 14.8e-6
+ 	set a_powder_thermal_expansion_14 = 14.8e-6
+ 	set a_powder_thermal_expansion_15 = 14.8e-6
+end
+
+
+# yield_strength
+subsection Temperature dependent solid material yield_strength
+	set num = 13
+	
+	set T_solid_yield_strength_1 = 293
+ 	set T_solid_yield_strength_2 = 373
+ 	set T_solid_yield_strength_3 = 473
+ 	set T_solid_yield_strength_4 = 573
+ 	set T_solid_yield_strength_5 = 673
+ 	set T_solid_yield_strength_6 = 773
+ 	set T_solid_yield_strength_7 = 873
+ 	set T_solid_yield_strength_8 = 973
+ 	set T_solid_yield_strength_9 = 1073
+ 	set T_solid_yield_strength_10 = 1173
+ 	set T_solid_yield_strength_11 = 1273
+ 	set T_solid_yield_strength_12 = 1373
+ 	set T_solid_yield_strength_13 = 1723
+
+	set y_solid_yield_strength_1 = 344.64e6
+ 	set y_solid_yield_strength_2 = 331.93e6
+ 	set y_solid_yield_strength_3 = 308.3e6
+ 	set y_solid_yield_strength_4 = 276.07e6
+ 	set y_solid_yield_strength_5 = 235.22e6
+ 	set y_solid_yield_strength_6 = 185.77e6
+ 	set y_solid_yield_strength_7 = 127.71e6
+ 	set y_solid_yield_strength_8 = 68.55e6
+ 	set y_solid_yield_strength_9 = 64.35e6
+ 	set y_solid_yield_strength_10 = 45.65e6
+ 	set y_solid_yield_strength_11 = 11.32e6
+ 	set y_solid_yield_strength_12 = 1.0e6
+ 	set y_solid_yield_strength_13 = 1e4
+ 	
+end
+
+subsection Temperature dependent liquid material yield_strength
+	set num = 13
+	
+	set T_liquid_yield_strength_1 = 293
+ 	set T_liquid_yield_strength_2 = 373
+ 	set T_liquid_yield_strength_3 = 473
+ 	set T_liquid_yield_strength_4 = 573
+ 	set T_liquid_yield_strength_5 = 673
+ 	set T_liquid_yield_strength_6 = 773
+ 	set T_liquid_yield_strength_7 = 873
+ 	set T_liquid_yield_strength_8 = 973
+ 	set T_liquid_yield_strength_9 = 1073
+ 	set T_liquid_yield_strength_10 = 1173
+ 	set T_liquid_yield_strength_11 = 1273
+ 	set T_liquid_yield_strength_12 = 1373
+ 	set T_liquid_yield_strength_13 = 1723
+
+	set y_liquid_yield_strength_1 = 344.64e6
+ 	set y_liquid_yield_strength_2 = 331.93e6
+ 	set y_liquid_yield_strength_3 = 308.3e6
+ 	set y_liquid_yield_strength_4 = 276.07e6
+ 	set y_liquid_yield_strength_5 = 235.22e6
+ 	set y_liquid_yield_strength_6 = 185.77e6
+ 	set y_liquid_yield_strength_7 = 127.71e6
+ 	set y_liquid_yield_strength_8 = 68.55e6
+ 	set y_liquid_yield_strength_9 = 64.35e6
+ 	set y_liquid_yield_strength_10 = 45.65e6
+ 	set y_liquid_yield_strength_11 = 11.32e6
+ 	set y_liquid_yield_strength_12 = 1.0e6
+ 	set y_liquid_yield_strength_13 = 1e4
+end
+
+subsection Temperature dependent powder material yield_strength
+	set num = 13
+	
+	set T_powder_yield_strength_1 = 293
+ 	set T_powder_yield_strength_2 = 373
+ 	set T_powder_yield_strength_3 = 473
+ 	set T_powder_yield_strength_4 = 573
+ 	set T_powder_yield_strength_5 = 673
+ 	set T_powder_yield_strength_6 = 773
+ 	set T_powder_yield_strength_7 = 873
+ 	set T_powder_yield_strength_8 = 973
+ 	set T_powder_yield_strength_9 = 1073
+ 	set T_powder_yield_strength_10 = 1173
+ 	set T_powder_yield_strength_11 = 1273
+ 	set T_powder_yield_strength_12 = 1373
+ 	set T_powder_yield_strength_13 = 1723
+
+	set y_powder_yield_strength_1 = 344.64e6
+ 	set y_powder_yield_strength_2 = 331.93e6
+ 	set y_powder_yield_strength_3 = 308.3e6
+ 	set y_powder_yield_strength_4 = 276.07e6
+ 	set y_powder_yield_strength_5 = 235.22e6
+ 	set y_powder_yield_strength_6 = 185.77e6
+ 	set y_powder_yield_strength_7 = 127.71e6
+ 	set y_powder_yield_strength_8 = 68.55e6
+ 	set y_powder_yield_strength_9 = 64.35e6
+ 	set y_powder_yield_strength_10 = 45.65e6
+ 	set y_powder_yield_strength_11 = 11.32e6
+ 	set y_powder_yield_strength_12 = 1.0e6
+ 	set y_powder_yield_strength_13 = 1e4
+end
+
+# hardening
+subsection Temperature dependent solid material hardening
+	set num = 12
+	
+	set T_solid_hardening_1 = 293
+	set T_solid_hardening_2 = 373
+ 	set T_solid_hardening_3 = 473
+ 	set T_solid_hardening_4 = 573
+ 	set T_solid_hardening_5 = 673
+ 	set T_solid_hardening_6 = 773
+ 	set T_solid_hardening_7 = 873
+ 	set T_solid_hardening_8 = 973
+ 	set T_solid_hardening_9= 1073
+ 	set T_solid_hardening_10 = 1173
+ 	set T_solid_hardening_11 = 1273
+ 	set T_solid_hardening_12 = 1373
+ 	
+
+	set h_solid_hardening_1 = 0.78e9
+ 	set h_solid_hardening_2 = 0.78e9
+ 	set h_solid_hardening_3 = 0.78e9
+ 	set h_solid_hardening_4 = 0.665e9
+ 	set h_solid_hardening_5 = 0.55e9
+ 	set h_solid_hardening_6 = 0.45e9
+ 	set h_solid_hardening_7 = 0.35e9
+ 	set h_solid_hardening_8 = 0.275e9
+ 	set h_solid_hardening_9 = 0.2e9
+ 	set h_solid_hardening_10 = 0.15e9
+ 	set h_solid_hardening_11 = 0.10e9
+ 	set h_solid_hardening_12 = 0
+
+end
+
+subsection Temperature dependent liquid material hardening
+	set num = 12
+	
+	set T_liquid_hardening_1 = 293
+	set T_liquid_hardening_2 = 373
+ 	set T_liquid_hardening_3 = 473
+ 	set T_liquid_hardening_4 = 573
+ 	set T_liquid_hardening_5 = 673
+ 	set T_liquid_hardening_6 = 773
+ 	set T_liquid_hardening_7 = 873
+ 	set T_liquid_hardening_8 = 973
+ 	set T_liquid_hardening_9= 1073
+ 	set T_liquid_hardening_10 = 1173
+ 	set T_liquid_hardening_11 = 1273
+ 	set T_liquid_hardening_12 = 1373
+ 	
+
+	set h_liquid_hardening_1 = 0.78e9
+ 	set h_liquid_hardening_2 = 0.78e9
+ 	set h_liquid_hardening_3 = 0.78e9
+ 	set h_liquid_hardening_4 = 0.665e9
+ 	set h_liquid_hardening_5 = 0.55e9
+ 	set h_liquid_hardening_6 = 0.45e9
+ 	set h_liquid_hardening_7 = 0.35e9
+ 	set h_liquid_hardening_8 = 0.275e9
+ 	set h_liquid_hardening_9 = 0.2e9
+ 	set h_liquid_hardening_10 = 0.15e9
+ 	set h_liquid_hardening_11 = 0.10e9
+ 	set h_liquid_hardening_12 = 0
+end
+
+subsection Temperature dependent powder material hardening
+	set num = 12
+	
+	set T_powder_hardening_1 = 293
+	set T_powder_hardening_2 = 373
+ 	set T_powder_hardening_3 = 473
+ 	set T_powder_hardening_4 = 573
+ 	set T_powder_hardening_5 = 673
+ 	set T_powder_hardening_6 = 773
+ 	set T_powder_hardening_7 = 873
+ 	set T_powder_hardening_8 = 973
+ 	set T_powder_hardening_9= 1073
+ 	set T_powder_hardening_10 = 1173
+ 	set T_powder_hardening_11 = 1273
+ 	set T_powder_hardening_12 = 1373
+ 	
+
+	set h_powder_hardening_1 = 0.78e9
+ 	set h_powder_hardening_2 = 0.78e9
+ 	set h_powder_hardening_3 = 0.78e9
+ 	set h_powder_hardening_4 = 0.665e9
+ 	set h_powder_hardening_5 = 0.55e9
+ 	set h_powder_hardening_6 = 0.45e9
+ 	set h_powder_hardening_7 = 0.35e9
+ 	set h_powder_hardening_8 = 0.275e9
+ 	set h_powder_hardening_9 = 0.2e9
+ 	set h_powder_hardening_10 = 0.15e9
+ 	set h_powder_hardening_11 = 0.10e9
+ 	set h_powder_hardening_12 = 0
+
+end
+# --------------------- mechanical properties end----------
+
+
